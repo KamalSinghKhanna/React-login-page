@@ -23,18 +23,18 @@ const LoginPage: React.FC = () => {
   }
 
   return (
-    <section className="bg-gray-100 min-h-screen flex box-border justify-center items-center">
-      <div className="bg-white rounded-2xl flex max-w-3xl p-5 items-center">
+    <section className="bg-gray-100 h-screen sm:min-h-screen flex box-border sm:justify-center sm:items-center">
+      <div className="bg-white rounded-2xl flex w-full h-full sm:w-auto sm:h-auto sm:max-w-3xl p-5 ">
         <div className="md:w-1/2 px-8">
-          <h2 className="font-bold text-3xl text-[#002D74]">Login</h2>
+          <h2 className="font-bold text-3xl text-blue-500">Login</h2>
           <div className="flex flex-col gap-2 mt-10">
             {error && (
-              <p className="text-red-500 text-xs italic mb-4" role="alert">
+              <p className="text-red-500 text-sm italic mb-4" role="alert">
                 {error}
               </p>
             )}
             {success && (
-              <p className="text-green-500 text-xs italic mb-4">{success}</p>
+              <p className="text-green-500 text-sm italic mb-4">{success}</p>
             )}
             <InputField
               id="username"
@@ -42,7 +42,7 @@ const LoginPage: React.FC = () => {
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="example@gamil.com"
+              placeholder="your username"
               changeVisiblity={changeVisiblity}
             />
             <InputField

@@ -30,7 +30,7 @@
       <div className="flex items-center relative">
         <input
           id={id}
-          className="appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-xs"
+          className="appearance-none border rounded-md w-full py-2.5 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-sm"
           type={type}
           value={value}
           placeholder={placeholder}
