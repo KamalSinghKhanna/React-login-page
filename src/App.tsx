@@ -1,5 +1,14 @@
+import LoginPage from "./pages/LoginPage"
+
+
 function App() {
-  return <>hi</>;
+  
+
+  return (
+    <>
+    <LoginPage />
+   </>
+  )
 }
 
-export default App;
+export default App
